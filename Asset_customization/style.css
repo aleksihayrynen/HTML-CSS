@@ -1,0 +1,354 @@
+*{
+    box-sizing: border-box;
+}
+p{
+    font-size: 150%;
+}
+h2{
+    font-size: 180%;
+
+}
+h1{
+    font-size: 200%;
+    
+}
+
+body{
+    margin: 0;
+    padding:0;
+    background-color: rgb(2, 2, 2);
+    margin: 0 auto;
+}
+.nav_bar {
+    height: 7vh;
+    position: fixed;
+    width: 100vw;
+    z-index: 3;
+    opacity: 0.3;
+    margin-top: 2vh;
+    transition: opacity 0.3s ease-out;
+    
+    
+
+}
+.nav_bar:hover{
+    opacity: 1;
+    transform:scale(1.1);
+    transform-origin: center center;
+}
+.nav_bar ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding:0;
+    height: 100%;
+
+}
+.nav_bar li{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin:0 50px;
+
+}
+.nav_bar img,a{
+    height: 100%;
+}
+header{
+    height: 100vh;
+    background-image:url(Pictures/header_bg.PNG) ;
+    background-repeat:repeat;
+    background-size: cover;
+    background-position: center;
+ 
+}
+.bg_shader{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.637);
+
+}
+.headertext{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.headertext h1{
+    color: rgba(231, 232, 233, 0.959);
+    margin-bottom: -2px;
+    margin-top: 0;
+    z-index: 2;
+}
+hr{
+    color: aliceblue;
+    width: 45vw;
+    margin:0;
+    z-index: 2;
+}
+.bg_body
+{
+opacity: 0.2;
+}
+.shadermerge{
+    width: 100%;
+    height: 0.1px;
+    box-shadow: 0px 10px 35px 35px rgb(0 0 0);
+    position: absolute;
+    z-index: 1;
+    background-color: black;
+}
+.index1{
+height: 100vh;
+width: 100%;
+box-shadow: 0px -20px 35px 10px rgb(0 0 0);
+background-image: url(Pictures/section_bg.jpg);
+background-repeat:repeat;
+background-size: cover;
+background-position: center;
+z-index: 2;
+
+
+}
+.section_shader{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.849);
+}
+#rightsakura{
+    position: absolute;
+    transform: rotate(140deg);
+    right: 7vw;
+    top:10vh;
+    width: 50vw;
+    max-width: 40%;
+
+}
+#midsakura{
+    position: absolute;
+    transform: rotate(-50deg);
+    width: 50vw;
+    bottom: 0vh;
+    z-index: 1;
+    max-width: 40%;
+
+}
+#leftsakura{
+    position: absolute;
+    width: 50vw;
+    bottom:-100vh;
+    max-width: 40%;
+    z-index: 1;
+    opacity: 0.8;
+    
+
+}
+#sakuralehdet{
+    position: absolute;
+    transform: rotate(0deg);
+    right: 0vw;
+    top:100vh;
+    width: 30vw;
+    opacity: 0.6;
+    max-width: 40%;
+    
+}
+.section1_text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 50vw;
+    height: 100%;
+    
+}
+.section1_text p,h2{
+    color: azure;
+    z-index: 2;
+    
+    
+}
+
+/*About me page starts*/
+.Aboutme_header{
+    height: 100vh;
+    background-image:url(Pictures/lahti_bg.jpg) ;
+    background-repeat:repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.headertext_aboutme{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    flex-direction: column;
+    
+
+    
+
+}
+.headertext_aboutme h1{
+    color: rgba(231, 232, 233, 0.959);
+    font-size:200%;
+    margin-bottom: -2px;
+    margin-top: 0;
+    z-index: 2;
+    margin-top: 15vh;
+}
+.aboutme_container {
+display: flex;
+width: 80%;
+
+}
+.circle{
+    width: 30%;
+}
+.circle picture{
+    height: 100%;
+}
+.text{
+    width: 70%;
+    float: left;
+    margin-top: 5vh;
+
+}
+#aboutmepic{
+width: 100%;
+    
+}
+
+.aboutme_container p,h2{
+    color: azure;
+    z-index: 2;
+}
+/*About me page ends*/
+
+/*Gallery page starts*/
+
+.gallery_container{
+    height: 100vh;
+    background-image:url(Pictures/Gallery_bg.jpg) ;
+    background-repeat:repeat;
+    background-size: cover;
+    background-position: center;
+}
+.Picture_gallery{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Picture_gallery h1{
+    color: azure;
+    margin-top: 15vh;
+}
+.pictureholders{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.pictureholders img{
+        height: auto;
+        width: 20vw;
+        border: solid white 0.5vw;
+        margin:0 2vw;
+}
+
+
+
+/*MEDIAQUERY*/
+@media only screen and (max-width: 1400px) 
+{
+    #leftsakura{
+        position: absolute;
+        width: 50vw;
+        bottom:-100vh;
+    
+    }
+}
+@media only screen and (max-width: 1400px) 
+{
+    #sakuralehdet{
+        width: 45vw;
+    }
+    .text{
+
+        margin-top: 0vh;
+    
+    }
+}
+@media only screen and (max-width: 1100px) 
+{
+    .aboutme_container {
+        display: flex;
+        width: 80%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .pictureholders{
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .pictureholders img{
+        height: 20vh;
+        width: auto;
+        border: solid white 0.5vw;
+        margin:2vw 2vw;
+    }
+    .gallery_container{
+        height: 100%;
+
+    }
+    body{
+        height: 100vh;
+    }
+}
+@media only screen and (max-width: 900px) 
+{
+    .section1_text{
+        width: 80vw;
+        height: 100%; 
+    }
+    .aboutme_container {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .Aboutme_header{
+        height: 150vh;
+    }
+
+}
+@media only screen and (max-width: 700px) 
+{
+    .section1_text{
+        width: 100vw;
+        height: 100%;
+        padding: 0 5vw;    
+    }
+    .circle{
+        width: 40%;
+    }
+    body{
+        height: 100vh;
+    }
+
+}
+@media only screen and (max-width: 600px) 
+{
+    body{
+        height: 100vh;
+    }
+}

@@ -1,0 +1,368 @@
+body {
+    background-color:rgb(0, 0, 0);
+    padding: 0px;
+    margin: 0px;
+}
+
+/* Header start */
+header {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+img.background {
+    width:100%;
+    height: 500px;
+    object-fit: cover;
+    opacity: 0.7;
+}
+
+.logo, header a{
+    position: absolute;
+    display: block;
+    filter: drop-shadow(0 0 3px white);
+    max-height: 250px;
+    width: 220px;
+    left:50%;
+    margin-left: -110px;
+    margin-top: -80px;
+    
+    
+}
+ h1.logo_text{
+    position: absolute;
+    color: white;
+    font-size: 300%;
+    filter: drop-shadow(3px 1px 1px rgb(17, 17, 17));
+    text-align: center;
+ }
+/* Header end */
+
+ /* Breadcrumb start */
+ .breadcrumb_blur{
+    position: relative;
+    width: 100%;
+    /* creating the blurring between header for  other pages */
+    box-shadow: 0px -20px 35px 40px rgb(0 0 0);
+    margin-bottom: 30px;
+ }
+ .breadcrumb {
+    display:flex;
+    background-color: rgb(0, 0, 0);
+    margin:0;
+    list-style: none;
+    padding-left: 20px;
+ }
+ .breadcrumb li{
+    margin:0 5px;
+    font-size: 120%;
+ }
+ ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: azure;
+    content: "/\00a0";
+ }
+ ul.breadcrumb li a {
+    color: azure;
+    text-decoration: none;
+ }
+ ul.breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+ }
+ /* breadcrumb end */
+
+/* navigation start */
+nav{
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: auto;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    margin: 0 0 50px 0;
+ }
+
+.nav_icons{
+    display:flex;
+    padding: 0;
+    margin: 0;
+    margin: 30px 0;
+    width: 300px;
+    height: auto;
+    margin: 0 50px;
+}
+
+.nav_icons1{
+    display:flex;
+    filter: drop-shadow(0 0 2px rgb(201, 201, 105));
+}
+
+.nav_icons2{
+    display:flex;
+    filter: drop-shadow(0 0 2px rgb(190, 8, 50));
+}
+
+.nav_icons3{
+    display:flex;
+    filter: drop-shadow(0 0 2px rgba(8, 10, 145, 0.829));
+}
+/* navigatio end */
+
+/* main area start */
+main{
+    background-color: rgb(0, 0, 0);
+    width: 60%;
+    height:40vw;
+    margin: 0 auto;
+}
+
+p{
+    color: azure;
+    font-size: 160%;
+    margin: 50px 0;
+    text-align: center;
+}
+
+.hr_icon_down{
+    width: 100px;
+    height: 100px;
+    rotate: 180deg;
+    position: relative;
+    left:50%;
+    margin-left: -50px;
+    margin-top: -30px;
+
+    
+}
+.hr_icon_up{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    left:50%;
+    margin-left: -50px;
+    margin-top: -90px;
+}
+
+h2{
+    color: azure;
+    margin: 0;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+/* Creates the blurring for header only in frontpage */
+.collection_boxhomepage{
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+    box-shadow: 0px -20px 35px 40px rgb(0 0 0);
+
+}
+.collection_box{
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.hr_lower{
+    margin-bottom: 100px;
+}
+hr{
+    opacity: 0.5;
+    box-shadow: 0 0 2px 1px rgb(223, 222, 222);
+}
+/* Main area end */
+
+/*Photogallery*/
+
+.Picture_gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    
+}
+.Picture{
+    width: 31%;
+    height: auto;
+    object-fit: cover;
+    display: flex;
+    margin: 10px 10px;
+    border:solid 1px white
+   
+}
+/*homepage, overall style ending*/
+
+/*Character section */
+
+.right_character{
+    float:right;
+    height: 100%;
+    margin-bottom: 20px;
+}
+.left_character{
+    float:left;
+    height: 100%;
+    margin-bottom: 20px;
+}
+.character{
+    overflow:hidden;
+    text-align: center;
+}
+.character h2{
+    color:azure;
+    margin-bottom: 20px;
+}
+h1.logo_textRemix{
+    position: absolute;
+    color: white;
+    font-size: 300%;
+    filter: drop-shadow(3px 1px 1px rgb(17, 17, 17));
+    text-align: center;
+ }
+ .character_game{
+    margin-bottom: 60px;
+    margin-top: 30px;
+ }
+  /* Active page status*/
+ #currentpage{
+    filter: drop-shadow(3px 1px 30px rgb(170, 182, 10, 0.5));
+ }
+ #currentpage2{
+    filter: drop-shadow(3px 1px 30px rgba(119, 14, 61, 0.9));
+ }
+
+ #currentpage3{
+    filter: drop-shadow(3px 1px 30px rgba(11, 37, 153, 0.9));
+
+ }
+ /*mediaquery begins */
+/* The different image sizes make the float act weird so different id classes needed to make each picture fit well with the querys */
+
+@media only screen and (max-width: 1600px) {
+    .Picture{
+      width: 48%;
+      margin: 6px 6px;
+    }
+}
+@media only screen and (max-width: 1200px) { 
+    main{
+        width: 80%;
+        height: 40vw;
+        margin:0 auto;
+    }
+}
+
+@media only screen and (max-width:900px) {
+    .Picture{
+      width: 100%;
+      margin: 6px 0;
+    }
+    main{
+        width: 100%;
+        height: 40vw;
+        margin:0 auto;
+        padding: 0 25px;
+        box-sizing: border-box;
+        
+    }
+}
+@media only screen and (max-width:650px) {
+    .right_character,.left_character{
+        margin: 0 100px;
+    }
+    /*235px-270px*/
+    #Sora,#Terra,#Roxas{
+        margin:0 150px;
+    }
+    /*167px-181px*/
+    #Aqua,#Ventus,#Ansem{
+        margin: 0 185px;
+    }
+    /*268px*/
+    #Kairi,#Xemnas{
+        margin: 0 130px;
+    }
+    /*290px-350px*/
+    #Riku,#Xehanort{
+        margin:0 90px
+    }
+
+}
+@media only screen and (max-width:550px) {
+    .right_character,.left_character{
+        margin: 0 50px;
+    }
+    /*235px-270px*/
+    #Sora,#Terra,#Roxas{
+        margin:0 100px;
+    }
+    #Xemnas{
+        margin:0 55px;
+    }
+    /*167px-181px*/
+    #Aqua,#Ventus{
+        margin: 0 135px;
+    }
+     /*221px*/
+    #Ansem{
+        margin: 0 145px;
+    }
+     /*268px*/
+    #Kairi{
+        margin: 0 100px;
+    }
+     /*350px*/
+    #Riku,#Xehanort{
+        margin:45px
+    }
+
+}
+@media only screen and (max-width:450px) {
+    .right_character,.left_character{
+        margin: 0 0px;
+        object-fit: contain;
+        height: auto;
+    }
+    /*235px-270px*/
+    #Sora,#Terra,#Roxas{
+        margin:0 55px;
+    }
+    #Xemnas{
+        margin:0 55px;
+    }
+    /*167px-221px*/
+    #Aqua,#Ventus,#Ansem{
+        margin: 0 100px;
+    }
+
+    #Ansem{
+        margin: 0 70px;
+    }
+
+    #Xemnas{
+        margin:0 20px;
+    }
+    /*268px*/
+    #Kairi{
+        margin: 0 50px;
+    }
+     /*350px*/
+    #Riku,#Xehanort{
+        margin:0 0px
+    }
+}
+
+
+
+
+
+
+
+
+
